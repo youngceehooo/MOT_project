@@ -9,7 +9,8 @@ the repository to be submited as our summer camp project
 **_本项目用于多目标追踪场景，提供目标选择、计算目标速度、从视频帧中截取目标图像、将选中目标单独监控等功能_**\
 ### 目标选择功能：
 ___创建鼠标回测函数___
-'''def on_mouse_click(event, x, y, flags, param):
+   
+    def on_mouse_click(event, x, y, flags, param):        
         nonlocal selected_object_id
         if event == cv2.EVENT_LBUTTONDOWN:  # 当鼠标左键点击时
             for idx, track in enumerate(tracks):
@@ -20,9 +21,11 @@ ___创建鼠标回测函数___
                     print(f"Selected object with ID: {selected_object_id}")
                     break'''
 ___鼠标回应函数___
-'''cv2.setMouseCallback("Frame", on_mouse_click)  # 设置鼠标事件回调函数'''
+    
+    cv2.setMouseCallback("Frame", on_mouse_click)  # 设置鼠标事件回调函数
 ___遍历跟踪器进行处理___
-'''for idx, track in enumerate(tracks):
+    
+    for idx, track in enumerate(tracks):
             if selected_object_id != -1 and idx != selected_object_id:
                 continue
             if selected_object_id != -1 and idx == selected_object_id:
@@ -44,4 +47,4 @@ ___遍历跟踪器进行处理___
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (B, G, R), 2)
                 cv2.rectangle(frame, (x1 - 1, y1 - 20), (x1 + len(text) * 12, y1), (B, G, R), -1)
                 cv2.putText(frame, text, (x1 + 5, y1 - 8), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
-               '''
+               
