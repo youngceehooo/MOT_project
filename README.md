@@ -1,5 +1,7 @@
 # MOT_project
 the repository to be submited as our summer camp project 
+## PPT链接
+[https://gamma.app/docs/MOTproject-kfgxvp34jjulx3j?mode=doc]
 ## 各文件用途
 trackers文件夹存储项目相关文件，\
 based_yolonas_deepsort.ipynb为jupyter源文件格式的项目代码，\
@@ -37,6 +39,13 @@ ___可应用于多目标追踪场景，主要为监控视频的计算机视觉�
 詹智杰-U202112243\
 吴炳旭-U202112233
 ### 任务分工：
+杨子赫：环境搭建，git操作，代码编辑\
+杨呈恺：代码编辑，报告编写\
+詹智杰：代码编辑，ppt制作\
+吴炳旭：代码编辑，资料检索
+## 项目总体设计
+### 团队架构
+我们采用的团队协作方式为支流合并为主流，利用git系统在仓库中设立分支，每个人在自己的分支上修改和维护代码，开展工作，这样分支不会影响到主干的正常运行，最后利用git merge合并分支汇总到master分支，同时我们在Slack应用上创建了工作空间，运用人工智能Claude辅助了团队协作和交流
 
 ## 项目关键技术
 ### 环境搭建（注意版本兼容）
